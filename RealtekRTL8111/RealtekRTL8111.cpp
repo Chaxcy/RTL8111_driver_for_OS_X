@@ -87,8 +87,8 @@ bool RTL8111::init(OSDictionary *properties)
         linuxData.pci_dev = &pciDeviceData;
         intrMitigateValue = 0x5f51;
         lastIntrTime = 0;
-        wolCapable = false;
-        wolActive = false;
+        wolCapable = true;
+        wolActive = true;
         enableTSO4 = false;
         enableTSO6 = false;
         enableCSO6 = false;
